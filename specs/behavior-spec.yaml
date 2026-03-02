@@ -1,0 +1,34 @@
+# Cross_Species_Interface_Architecture Specification
+# Model: AniPI (Animal Programming Interface)
+
+version: 1.0.0
+id: CSIA-FETCH-01
+description: "Objektorientierte Validierungslogik für präzises Apportierverhalten"
+
+interface:
+  controller: "Node-A (Human)"
+  subject: "Node-B (Cat)"
+  protocol: "Asynchronous-Request-Response"
+
+parameters:
+  validation_radius:
+    initial_value: 1.5  # Meter
+    target_value: 0.1   # Zielpräzision (Handkontakt)
+    step_reduction: 0.2 # Dekrement bei 3x Erfolg in Folge
+
+logic_gate:
+  input_event: "OBJECT_DROPPED"
+  condition: "distance(node_b_drop_pos, node_a_hand_pos) <= validation_radius"
+  
+  actions:
+    on_true:
+      - "execute_reward_function()"
+      - "increment_success_counter()"
+      - "update_precision_parameters()"
+    on_false:
+      - "null_response()"
+      - "wait_for_system_recalculation()" # Das Tier iteriert die Position
+
+emergent_behavior_tracking:
+  - "pos_adjustment_iteration": "System testet verschiedene Koordinaten bei Validierungsfehler"
+  - "efficiency_mapping": "System wählt den kürzesten Rückweg zur Validierungszone"
