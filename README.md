@@ -58,3 +58,8 @@ logic_gate:
 During the test phase, the target system (Node B) exhibited hypothesis-based position correction. If validation failed (on_false), the object was not placed randomly, but rather repositioned in a directed approximation to the coordinates of Node A until the validation_radius was reached.
 
 *This confirms that the system optimizes itself against the interface parameters, not against a direct instruction.*
+
+---
+
+## Die Analyse  
+[Von der AnPi zur biologischen Verhaltenslogik](https://github.com/traegerton-ai/Cross-Species-Interface-Architecture/blob/eb227b92fdee71172d84b7d8b390ffea5ae02b44/specs/Cross_Species_Interface_Architecture.md)
