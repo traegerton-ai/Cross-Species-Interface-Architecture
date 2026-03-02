@@ -1,11 +1,12 @@
 ## Cross-Species-Interface-Architecture 
 
+---
+
 <p align="center">
-<img width="80" height="80" alt="1000135519" src="https://github.com/user-attachments/assets/2af538f7-52df-4b35-8883-8c402c46ded6"/>
+  <img src="https://github.com/user-attachments/assets/2af538f7-52df-4b35-8883-8c402c46ded6" width="64" alt="Nerd Level 9000 Badge"/>
 </p>
 
 ---
-
 
 Cybernetic behavior modeling: Translating biological conditioning into Object-Oriented Interface Logic (AniPI/HPI). A framework for emergent interaction effects between autonomous systems.
 
