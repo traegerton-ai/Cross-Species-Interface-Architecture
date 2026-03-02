@@ -2,6 +2,7 @@ Target-System: Felis catus (Node-B)
 Controller: Homo sapiens (Node-A)
 Protocol: AniPI v1.0 (Event-Driven)
 Validation: Distance-Threshold-Verification
+
 ---
 
 # SPEC-001: Animal Programming Interface (AniPI=.
@@ -21,6 +22,7 @@ Wenn man herkömmliche Konditionierung einer Katze strukturell herunterbricht un
 Dann wird sichtbar, was tatsächlich passiert: Nicht das Innenleben wird kontrolliert –
 sondern die Parameter der Schnittstelle werden definiert.
 
+---
 
 → HUMAN PROGRAMMING INTERFACE (HPI)  
 → ANIMAL PROGRAMMING INTERFACE (AniPI)  
@@ -183,14 +185,14 @@ Validierung oder Nicht-Validierung.
 Das System testet Parameterbereiche durch Iteration.  
 
 Technische Entsprechung:  
-
+````
 while success == false:  
     adjust_position()  
     validate()  
 
 Das biologische System führt eine hypothesenbasierte Positionskorrektur durch,  
 bis der Erfolgszustand erreicht wird.  
-
+````
 ---
 
 ## 6. LERNARCHITEKTUR  
