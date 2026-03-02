@@ -30,3 +30,31 @@ Dieses Repository dokumentiert die methodische Übertragung von objektorientiert
 
 ## Use Case: Precision Fetching
 Die Implementierung einer **Radiusbestimmung** beim Apportieren demonstriert, dass durch die bloße Anpassung der `validate()`-Bedingung eine komplexe, autonome Neujustierung des Zielsystems (Katze) induziert wird – ohne direkte Befehlseingabe.
+
+---
+
+## Implementation: Behavioral Specification
+
+Die formale Definition der Schnittstellenlogik ist in der [behavior-spec.yaml](./specs/behavior-spec.yaml) hinterlegt. Diese Spezifikation definiert das Protokoll für die **Radius-Validierung** und dient als Blueprint für die Interaktionsschleife.
+
+... ...
+
+defines the protocol for **radius validation** and serves as a blueprint for the interaction loop.
+
+### Execution Logic (YAML Extract)
+```yaml
+logic_gate:
+  input_event: "OBJECT_DROPPED"
+  condition: "distance(node_b_drop_pos, node_a_hand_pos) <= validation_radius"
+  actions:
+    on_true:
+      "execute_reward_function()"
+    on_false: 
+      "wait_for_system_recalculation()" # Induziert autonome Iteration
+
+```
+
+## Observation: Emergent Behavior
+During the test phase, the target system (Node B) exhibited hypothesis-based position correction. If validation failed (on_false), the object was not placed randomly, but rather repositioned in a directed approximation to the coordinates of Node A until the validation_radius was reached.
+
+*This confirms that the system optimizes itself against the interface parameters, not against a direct instruction.*
