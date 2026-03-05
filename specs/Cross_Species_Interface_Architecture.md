@@ -5,17 +5,17 @@ Validation: Distance-Threshold-Verification
 
 ---
 
-# SPEC-001: Animal Programming Interface (AniPI=.
-
----
+# <p align="center">SPEC-001: Animal Programming Interface (AniPI)</p>
 
 <p align="center">
 <img width="64" height="74" alt="1000135519" src="https://github.com/user-attachments/assets/7f379306-31b1-4369-9b72-5e696be7ad01" />
 </p>
 
----
 
-## Cross_Species_Interface_Architecture  
+## *<p align="center">Cross Species Interface Architecture</p>*
+
+--
+
 ### Von API zu objektorientierter Verhaltenslogik  
 
 KONZEPTUELLER URSPRUNG 
