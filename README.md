@@ -66,4 +66,4 @@ During the test phase, the target system (Node B) exhibited hypothesis-based pos
 ---
 
 ## Die Analyse  
-[Von der AnPi zur biologischen Verhaltenslogik](https://github.com/traegerton-ai/Cross-Species-Interface-Architecture/blob/eb227b92fdee71172d84b7d8b390ffea5ae02b44/specs/Cross_Species_Interface_Architecture.md)
+[Von der AnPi zur biologischen Verhaltenslogik](https://github.com/traegerton-ai/Cross-Species-Interface-Architecture/blob/ad2f2b07bf740a6b94b8933dc54387ac24caeec7/specs/Cross_Species_Interface_Architecture.md)
